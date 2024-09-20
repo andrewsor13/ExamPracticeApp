@@ -1,0 +1,7 @@
+.container {
+  margin: 30px;
+  max-width: 480px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}

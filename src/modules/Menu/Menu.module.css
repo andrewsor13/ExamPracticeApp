@@ -1,0 +1,72 @@
+.menuContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #404040;
+  padding: 40px 20px;
+  width: 200px;
+  height: fit-content;
+  opacity: 95%;
+  border-radius: 0px 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.animateIn {
+  animation: 0.5s slideInFromTheRight ease-in-out;
+}
+.animateOut {
+  animation: 0.5s slideOutToTheRight ease-in-out;
+}
+
+.menuButton {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+a {
+  color: orange;
+}
+
+.menuGroup {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.dropDown {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+.menuGroupLink {
+  width: fit-content;
+}
+
+.dropDownList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@keyframes slideInFromTheRight {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes slideOutToTheRight {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(300px);
+  }
+}

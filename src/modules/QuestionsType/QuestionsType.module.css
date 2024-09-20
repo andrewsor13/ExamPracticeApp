@@ -1,0 +1,62 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  animation: 1s slideInFromTheBottom ease-in-out;
+}
+
+.listItem {
+  width: 150px;
+}
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word;
+  outline: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button {
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: #fafad4;
+  background-color: #404040;
+  transition: all 0.5s ease;
+  height: 80%;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
+}
+a:focus {
+  outline: none;
+}
+
+a:active {
+  outline: none;
+}
+.isActive {
+  color: orange;
+  background-color: #303030;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+}
+
+.button:hover {
+  color: orange;
+  background-color: #303030;
+}
+
+@keyframes slideInFromTheBottom {
+  0% {
+    opacity: 50%;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0px);
+  }
+}
