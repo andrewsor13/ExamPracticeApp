@@ -9,7 +9,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/");
+    navigate("/Exam-practice-app");
   };
 
   const toggleMenu = () => {
