@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ExamPracticeApp/static/css/main.a127ae8e.css",
+    "main.js": "/ExamPracticeApp/static/js/main.e72b88c4.js",
+    "index.html": "/ExamPracticeApp/index.html",
+    "main.a127ae8e.css.map": "/ExamPracticeApp/static/css/main.a127ae8e.css.map",
+    "main.e72b88c4.js.map": "/ExamPracticeApp/static/js/main.e72b88c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a127ae8e.css",
+    "static/js/main.e72b88c4.js"
+  ]
+}
