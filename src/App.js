@@ -13,18 +13,15 @@ function App() {
       <Header />
       <Container>
         <Routes>
-          <Route path="/Exam-practice-app/" element={<Main />}></Route>
-          <Route path="/Exam-practice-app/:exam" element={<INMPage />}></Route>
+          <Route path="/ExamPracticeApp" element={<Main />}></Route>
+          <Route path="/ExamPracticeApp/:exam" element={<INMPage />}></Route>
           <Route
-            path="/Exam-practice-app/:exam/:year"
+            path="/ExamPracticeApp/:exam/:year"
             element={<QuestionsType />}
           >
             <Route path=":type" element={<QuestionsList />}></Route>
           </Route>
-          <Route
-            path="/Exam-practice-app/About"
-            element={<AboutPage />}
-          ></Route>
+          <Route path="/ExamPracticeApp/About" element={<AboutPage />}></Route>
         </Routes>
       </Container>
     </div>

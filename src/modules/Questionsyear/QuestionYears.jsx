@@ -8,7 +8,7 @@ export default function QuestionYears() {
   const { exam } = useParams();
   const data = db.find((item) => item.exam === exam);
   const handleClick = (year) => {
-    navigate(`/Exam-practice-app/${exam}/${year}`);
+    navigate(`/ExamPracticeApp/${exam}/${year}`);
   };
   return (
     <ul className={styles.list}>

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export default function MainButton({ text, link }) {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate(`/Exam-practice-app/${link}`);
+    navigate(`/ExamPracticeApp/${link}`);
   };
   return (
     <button className={styles.button} onClick={handleClick}>

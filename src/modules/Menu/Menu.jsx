@@ -43,7 +43,7 @@ export default function Menu({ setIsOpen, isOpen }) {
           onClick={handleBarList}
         />
         <div className={styles.menuGroupLink}>
-          <NavLink to="/Exam-practice-app/INM" onClick={toggleMenu}>
+          <NavLink to="/ExamPracticeApp/INM" onClick={toggleMenu}>
             INM
           </NavLink>
         </div>
@@ -54,7 +54,7 @@ export default function Menu({ setIsOpen, isOpen }) {
               return (
                 <li key={key}>
                   <NavLink
-                    to={`/Exam-practice-app/INM/${item.year}`}
+                    to={`/ExamPracticeApp/INM/${item.year}`}
                     onClick={toggleMenu}
                   >
                     {item.year}
@@ -74,7 +74,7 @@ export default function Menu({ setIsOpen, isOpen }) {
           onClick={handleToggleINMList}
         />{" "}
         <div className={styles.menuGroupLink}>
-          <NavLink to="/Exam-practice-app/Barou" onClick={toggleMenu}>
+          <NavLink to="/ExamPracticeApp/Barou" onClick={toggleMenu}>
             Barou
           </NavLink>
         </div>
@@ -85,7 +85,7 @@ export default function Menu({ setIsOpen, isOpen }) {
               return (
                 <li key={key}>
                   <NavLink
-                    to={`/Exam-practice-app/Barou/${item.year}`}
+                    to={`/ExamPracticeApp/Barou/${item.year}`}
                     onClick={toggleMenu}
                   >
                     {item.year}
@@ -98,7 +98,7 @@ export default function Menu({ setIsOpen, isOpen }) {
         ) : null}
       </div>
       <div className={styles.menuGroup}>
-        <NavLink to="/Exam-practice-app/About" onClick={toggleMenu}>
+        <NavLink to="/ExamPracticeApp/About" onClick={toggleMenu}>
           About
         </NavLink>
         <hr color="orange" width="100%"></hr>
