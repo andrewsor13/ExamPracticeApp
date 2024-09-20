@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Container>
         <Routes>
-          <Route path="/" element={<Main />}></Route>
+          <Route path="/Exam-practice-app" element={<Main />}></Route>
           <Route path="/Exam-practice-app/:exam" element={<INMPage />}></Route>
           <Route
             path="/Exam-practice-app/:exam/:year"
