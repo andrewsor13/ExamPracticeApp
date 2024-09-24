@@ -4,11 +4,13 @@
   flex-wrap: wrap;
   gap: 30px;
   animation: 1s slideInFromTheBottom ease-in-out;
+  justify-content: center;
 }
 
 .listItem {
   width: 150px;
 }
+
 a {
   display: flex;
   justify-content: center;
@@ -31,7 +33,9 @@ a {
   transition: all 0.5s ease;
   height: 80%;
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
+  font-weight: bold;
 }
+
 a:focus {
   outline: none;
 }
@@ -58,5 +62,25 @@ a:active {
   100% {
     opacity: 100%;
     transform: translateY(0px);
+  }
+}
+
+@media (min-width: 576px) {
+  .button {
+    font-size: 18px;
+    padding: 8px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .button {
+    font-size: 30px;
+    padding: 10px;
+  }
+  .list {
+    gap: 30px;
+  }
+  .listItem {
+    width: 250px;
   }
 }

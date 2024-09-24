@@ -1,17 +1,30 @@
 .button {
   width: 45%;
-  height: 250px;
+  height: 150px;
   border: none;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 30px;
   padding: 10px;
   border: none;
   color: #fafad4;
   background-color: #404040;
   transition: all 0.3s ease;
+  font-weight: bold;
 }
 
 .button:hover {
   color: orange;
   background-color: #303030;
+}
+
+@media (min-width: 576px) {
+  .button {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .button {
+    font-size: 60px;
+  }
 }

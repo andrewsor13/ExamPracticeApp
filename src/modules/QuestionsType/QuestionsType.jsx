@@ -8,6 +8,10 @@ export default function QuestionsType() {
   const examData = db.find((item) => item.exam === exam);
   const yearData = examData.data.find((item) => item.year === year);
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <div>
       <ul className={styles.list}>
@@ -27,8 +31,10 @@ export default function QuestionsType() {
             </li>
           );
         })}
-        <Outlet />
       </ul>
+      <form onSubmit={handleSubmit}>
+        <Outlet />
+      </form>
     </div>
   );
 }

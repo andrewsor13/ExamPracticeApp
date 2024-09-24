@@ -70,3 +70,18 @@ a {
     transform: translateX(300px);
   }
 }
+
+@media (min-width: 576px) {
+  a {
+    font-size: 25px;
+    padding: 8px;
+  }
+  .dropDown {
+    top: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  a {
+    font-size: 40px;
+  }
+}

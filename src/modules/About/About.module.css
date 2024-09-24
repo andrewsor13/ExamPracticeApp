@@ -56,3 +56,28 @@ h4 {
     transform: translateY(0px);
   }
 }
+
+@media (min-width: 576px) {
+  .text {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 50px;
+  }
+  h4 {
+    font-size: 30px;
+  }
+}

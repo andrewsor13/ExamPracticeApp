@@ -4,4 +4,101 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.navContainer {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+.active {
+  text-decoration: underline;
+}
+
+.menuGroup {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  position: relative;
+}
+a {
+  transition: 0.5s all ease-in-out;
+}
+
+.menuGroup a:hover {
+  color: rgb(128, 99, 44);
+}
+
+.dropDown {
+  position: absolute;
+  left: -25px;
+  top: 15px;
+}
+
+.menuGroupLink {
+  width: fit-content;
+}
+
+.dropDownList {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 55px;
+  background-color: #404040;
+  opacity: 95%;
+  z-index: 1000;
+
+  animation: 0.5s scrollDown ease-in-out;
+}
+@keyframes scrollDown {
+  0% {
+    opacity: 0%;
+
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  70% {
+    transform: translateY(-6px);
+  }
+  80% {
+    opacity: 95%;
+
+    transform: translateY(0px);
+  }
+  90% {
+    transform: translateY(-3px);
+  }
+  100% {
+    opacity: 95%;
+
+    transform: translateY(0px);
+  }
+}
+@media (min-width: 1200px) {
+  .dropDownList {
+    padding: 15px;
+    border-radius: 20px;
+  }
+  .dropDownList li {
+    width: 200px;
+  }
+  .dropDownListLink {
+    font-size: 30px;
+  }
+  .navLink {
+    font-size: 40px;
+  }
+  .header {
+    justify-content: space-around;
+  }
 }
