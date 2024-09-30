@@ -7,24 +7,30 @@ import INMPage from "./pages/INMPage";
 import QuestionsType from "./modules/QuestionsType/QuestionsType";
 import QuestionsList from "./modules/QuestionsList/QuestionsList";
 import AboutPage from "./pages/AboutPage";
+import { AnsweredQuestionsProvider } from "./store/AnsweredQuestionsData";
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Container>
-        <Routes>
-          <Route path="/ExamPracticeApp" element={<Main />}></Route>
-          <Route path="/ExamPracticeApp/:exam" element={<INMPage />}></Route>
-          <Route
-            path="/ExamPracticeApp/:exam/:year"
-            element={<QuestionsType />}
-          >
-            <Route path=":type" element={<QuestionsList />}></Route>
-          </Route>
-          <Route path="/ExamPracticeApp/About" element={<AboutPage />}></Route>
-        </Routes>
-      </Container>
-    </div>
+    <AnsweredQuestionsProvider>
+      <div>
+        <Header />
+        <Container>
+          <Routes>
+            <Route path="/ExamPracticeApp" element={<Main />}></Route>
+            <Route path="/ExamPracticeApp/:exam" element={<INMPage />}></Route>
+            <Route
+              path="/ExamPracticeApp/:exam/:year"
+              element={<QuestionsType />}
+            >
+              <Route path=":type" element={<QuestionsList />}></Route>
+            </Route>
+            <Route
+              path="/ExamPracticeApp/About"
+              element={<AboutPage />}
+            ></Route>
+          </Routes>
+        </Container>
+      </div>
+    </AnsweredQuestionsProvider>
   );
 }
 

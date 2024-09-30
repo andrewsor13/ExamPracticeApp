@@ -7,7 +7,7 @@ import Menu from "../Menu/Menu";
 import db from "../../db/db.json";
 
 export default function Header() {
-  const [windowSize, setWindowSize] = useState();
+  const [windowSize, setWindowSize] = useState(window.screen.width);
   const [isOpen, setIsOpen] = useState(false);
   const [toggleBarList, setToggleBarList] = useState(false);
   const [toggleINMList, setINMList] = useState(false);
@@ -15,7 +15,6 @@ export default function Header() {
   const handleClick = () => {
     navigate("/ExamPracticeApp");
   };
-
   const handleResize = () => {
     setWindowSize(window.screen.width);
   };
@@ -38,7 +37,7 @@ export default function Header() {
     <div className={styles.header}>
       <PiBooks
         className={styles.svg}
-        size={windowSize <= 576 ? 30 : 50}
+        size={windowSize <= 576 ? 30 : 80}
         color="orange"
         onClick={handleClick}
       />
