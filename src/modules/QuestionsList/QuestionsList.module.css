@@ -110,6 +110,16 @@ p::first-letter {
   color: red;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+input[type="checkbox"][disabled][checked] {
+  /* filter: invert(100%) hue-rotate(18deg) brightness(5); */
+  filter: invert(55%) sepia(100%) saturate(1000%) hue-rotate(200deg)
+    brightness(105%) contrast(50%);
+}
+
 @keyframes rollOut {
   0% {
     transform: translateY(-800px);

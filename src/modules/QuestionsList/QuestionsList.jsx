@@ -85,7 +85,7 @@ export default function QuestionsList() {
       // Checking if the question was answered correctly and adding the correctAnswer class.
       if (checkedAnswers[questionId].correct === true) {
         if (checkedAnswers[questionId].answers[answerIndex]) {
-          return `${styles.correctAnswer}`;
+          return `${styles.correctAnswer} ${styles.bold}`;
         }
       } else {
         // Checking which answers are correct and wrong and marking them accordingly when the question was answered incorrectly
@@ -146,6 +146,7 @@ export default function QuestionsList() {
                                   checkedAnswers[item.id].answers[key]
                                 )
                               }
+                              disabled={isSubmitted}
                             />
                             <p
                               className={

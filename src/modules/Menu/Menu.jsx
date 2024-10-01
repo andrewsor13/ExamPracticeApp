@@ -9,6 +9,7 @@ export default function Menu({ setIsOpen, isOpen }) {
   const [toggleBarList, setToggleBarList] = useState(false);
   const [toggleINMList, setINMList] = useState(false);
   const [animateOut, setAnimateOut] = useState(false);
+
   const toggleMenu = () => {
     setAnimateOut(true);
     setTimeout(() => {
@@ -16,6 +17,7 @@ export default function Menu({ setIsOpen, isOpen }) {
       setIsOpen(false);
     }, 400);
   };
+
   const handleBarList = () => {
     setToggleBarList(!toggleBarList);
   };
@@ -35,6 +37,7 @@ export default function Menu({ setIsOpen, isOpen }) {
         className={styles.menuButton}
         onClick={toggleMenu}
       />
+
       <div className={styles.menuGroup}>
         <GoTriangleDown
           color="orange"

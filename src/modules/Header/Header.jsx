@@ -42,11 +42,13 @@ export default function Header() {
         onClick={handleClick}
       />
       {windowSize <= 1199 ? (
-        <IoMdMenu
-          size={windowSize <= 576 ? 30 : 50}
-          color="orange"
-          onClick={toggleMenu}
-        />
+        !isOpen ? (
+          <IoMdMenu
+            size={windowSize <= 576 ? 30 : 50}
+            color="orange"
+            onClick={toggleMenu}
+          />
+        ) : null
       ) : (
         <div className={styles.navContainer}>
           <div
