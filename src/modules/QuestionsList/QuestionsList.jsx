@@ -107,6 +107,10 @@ export default function QuestionsList() {
   };
 
   useEffect(() => {
+    setCheckedAnswers({});
+  }, [year, setCheckedAnswers]);
+
+  useEffect(() => {
     setAnimate(false);
     const timer = setTimeout(() => setAnimate(true), 50);
     return () => clearTimeout(timer);
