@@ -11,6 +11,34 @@ export default function QuestionsList() {
     useAnsweredQuestionsData();
   const { exam, year, type } = useParams();
   const ref = useRef(null);
+  const alphabetArr = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+  ];
 
   const examData = db.find((item) => item.exam === exam);
   const yearData = examData.data.find((item) => item.year === year);
@@ -94,12 +122,13 @@ export default function QuestionsList() {
                 <h3 className={styles.question}>
                   <span>{item.id}.</span> <span>{item.question}</span>
                 </h3>
-                <ol type="A">
+                <ul className={styles.dataList}>
                   {item.answers?.map((answer, key) => {
                     return (
                       <li key={key}>
                         <div className={styles.questionData}>
                           <label className={styles.questionData}>
+                            <span>{alphabetArr[key]}.</span>
                             <input
                               type="checkbox"
                               className={styles.input}
@@ -132,7 +161,7 @@ export default function QuestionsList() {
                       </li>
                     );
                   })}
-                </ol>
+                </ul>
               </li>
             );
           })}

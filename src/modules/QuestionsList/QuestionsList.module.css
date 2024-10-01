@@ -1,7 +1,7 @@
 .list {
   border: 1px solid black;
   border-radius: 20px;
-  padding: 10px;
+  padding: 10px 15px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -30,20 +30,17 @@ h3 {
 
 .listItem {
   border-bottom: 1px solid black;
-  /* padding: 10px 5px 20px 5px; */
-  margin: 10px 5px 20px 5px;
 }
 .listItem:last-child {
   border-bottom: none;
 }
 
-ol {
-  padding-left: 20px;
+.dataList {
+  padding-left: 15px;
   display: flex;
   flex-direction: column;
   gap: 15px;
   margin: 15px 0px;
-  width: fit-content;
 }
 
 p {
@@ -58,7 +55,7 @@ p::first-letter {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 .buttonContainer {
   display: flex;
@@ -163,7 +160,7 @@ p::first-letter {
     padding-right: 15px;
   }
 
-  ol {
+  .dataList {
     padding-left: 40px;
     gap: 40px;
   }
