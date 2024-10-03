@@ -198,7 +198,7 @@ export default function QuestionsList() {
             ) : null}
             <NavLink
               onClick={handleClick}
-              to={`/ExamPracticeApp/INM/2023-2024/${handleNext()}`}
+              to={`/ExamPracticeApp/${exam}/${year}/${handleNext()}`}
               className={styles.button}
             >
               Next
