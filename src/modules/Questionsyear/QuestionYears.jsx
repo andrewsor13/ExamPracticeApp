@@ -12,18 +12,20 @@ export default function QuestionYears() {
   };
   return (
     <ul className={styles.list}>
-      {data.data?.map((data, key) => {
-        return (
+      {data.data?.map((item, key) => {
+        return item.year !== "" ? (
           <li key={key}>
             <button
               className={styles.button}
               onClick={() => {
-                handleClick(data.year);
+                handleClick(item.year);
               }}
             >
-              {data.year}
+              {item.year}
             </button>
           </li>
+        ) : (
+          <p>No data yet.</p>
         );
       })}
     </ul>
