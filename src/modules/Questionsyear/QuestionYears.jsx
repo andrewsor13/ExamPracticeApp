@@ -25,7 +25,7 @@ export default function QuestionYears() {
             </button>
           </li>
         ) : (
-          <p>No data for exam yet.</p>
+          <p>No data for exam yet. Come back later.</p>
         );
       })}
     </ul>
